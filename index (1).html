@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>মৌমিতা বিউটি জোন - Beauty Parlour</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', 'Tiro Bangla', serif;
+            background-color: #FEFBF6;
+        }
+        .bengali {
+            font-family: 'Tiro Bangla', serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #FFD1E3, #FFF0F5);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 25px -5px rgba(213, 63, 140, 0.1), 0 8px 10px -6px rgba(213, 63, 140, 0.1);
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+        }
+        .accordion-content.open {
+           padding-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-2xl">
+        
+        <!-- Header Section -->
+        <header class="text-center p-8 mb-8 rounded-3xl gradient-bg card-shadow">
+            <h1 class="bengali text-4xl md:text-5xl font-bold text-pink-800" style="color: #AD343E;">মৌমিতা বিউটি জোন</h1>
+            <p class="bengali text-xl md:text-2xl mt-2 text-gray-600">আপনার সৌন্দর্যের বিশ্বস্ত ঠিকানা</p>
+        </header>
+
+        <!-- Services Section with Accordion -->
+        <main>
+            <h2 class="bengali text-2xl font-bold text-center mb-6 text-pink-700">আমাদের সেবার মূল্য তালিকা</h2>
+
+            <div class="space-y-4" id="accordion-container">
+                <!-- Hair Services Card -->
+                <div class="bg-white rounded-2xl card-shadow overflow-hidden">
+                    <button class="accordion-toggle w-full text-left p-6 flex justify-between items-center">
+                        <div class="flex items-center">
+                            <i class="fas fa-cut text-2xl text-pink-500 mr-4"></i>
+                            <h3 class="bengali text-xl font-semibold text-gray-700">চুল কাটিং ও হেয়ার সার্ভিস</h3>
+                        </div>
+                        <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6">
+                        <ul class="bengali text-gray-600 space-y-3 border-t pt-4">
+                            <li class="flex justify-between"><span>আপার লিপ</span> <span>৫০/-</span></li>
+                            <li class="flex justify-between"><span>মুখ থ্রেডিং</span> <span>৮০/-</span></li>
+                            <li class="flex justify-between"><span>সামনে লেয়ার</span> <span>১০০/-</span></li>
+                            <li class="flex justify-between"><span>সম্পূর্ণ লেয়ার</span> <span>১৫০/-</span></li>
+                            <li class="flex justify-between"><span>ট্রি স্টেপ কাট</span> <span>৩০০/-</span></li>
+                            <li class="flex justify-between"><span>ইউ কাট / টি কাট</span> <span>২৫০/-</span></li>
+                            <li class="flex justify-between"><span>বেবি কাট</span> <span>১৫০/-</span></li>
+                            <li class="flex justify-between"><span>ভায়না কাট / রাখি কাট</span> <span>২০০/-</span></li>
+                            <li class="flex justify-between"><span>চুলে অয়েল ম্যাসাজ (শ‍্যাম্পু সহ)</span> <span>৩০০/-</span></li>
+                            <li class="flex justify-between"><span>চুলে খুশকি থেরাপি</span> <span>১০০০/-</span></li>
+                            <li class="flex justify-between"><span>খুশকি ও চুলপড়া বন্ধ ট্রিটমেন্ট</span> <span>১৫০০/-</span></li>
+                            <li class="flex justify-between"><span>বেবিন পাম</span> <span>২০০০-৫০০০/-</span></li>
+                            <li class="flex justify-between"><span>স্ট্রেট পাম</span> <span>২৫০০-৫০০০/-</span></li>
+                            <li class="flex justify-between"><span>ভলিয়ম স্ট্রেট</span> <span>৬০০০-৫০০০/-</span></li>
+                            <li class="flex justify-between"><span>হেয়ার প্রোটিন</span> <span>১০০০/-</span></li>
+                            <li class="flex justify-between"><span>হেয়ার স্পা</span> <span>১৫০০/-</span></li>
+                            <li class="flex justify-between"><span>চুল আয়ারন</span> <span>৬০০/-</span></li>
+                            <li class="flex justify-between"><span>চুলে বেইজ কালার</span> <span>১৫০০-৩০০০/-</span></li>
+                            <li class="flex justify-between"><span>চুলে স্টিক কালার</span> <span>৪০০-৬০০/-</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Facial & Skin Card -->
+                <div class="bg-white rounded-2xl card-shadow overflow-hidden">
+                    <button class="accordion-toggle w-full text-left p-6 flex justify-between items-center">
+                        <div class="flex items-center">
+                            <i class="fas fa-spa text-2xl text-pink-500 mr-4"></i>
+                            <h3 class="bengali text-xl font-semibold text-gray-700">ফেসিয়াল ও ত্বকের যত্ন</h3>
+                        </div>
+                        <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6">
+                        <ul class="bengali text-gray-600 space-y-3 border-t pt-4">
+                            <li class="flex justify-between"><span>ম্যাসাজ</span> <span>২৫০/-</span></li>
+                            <li class="flex justify-between"><span>হারবাল ফেসিয়াল</span> <span> ৩৫০/-</span></li>
+                            <li class="flex justify-between"><span>শাহানাজ ফেসিয়াল</span> <span>৮০০/-</span></li>
+                            <li class="flex justify-between"><span>টেন ফেসিয়াল</span> <span>৬০০/-</span></li>
+                            <li class="flex justify-between"><span>মেহেতা ফেসিয়াল</span> <span>৫৫০/-</span></li>
+                            <li class="flex justify-between"><span>গোল্ডেন ফেসিয়াল কালার</span> <span>৭০০/-</span></li>
+                            <li class="flex justify-between"><span>গোল্ডেন ফেসিয়াল</span> <span>১০০০/-</span></li>
+                            <li class="flex justify-between"><span>চন্দন ফেসিয়াল</span> <span>৫৫০/-</span></li>
+                            <li class="flex justify-between"><span>নিম ফেসিয়াল</span> <span>৬০০/-</span></li>
+                            <li class="flex justify-between"><span>ব্রণ ট্রিটমেন্ট থেরাপি</span> <span>১২০০/-</span></li>
+                            <li class="flex justify-between"><span>ওজন ফেসিয়াল</span> <span>৯৫০/-</span></li>
+                            <li class="flex justify-between"><span>ফ্রুটস ফেসিয়াল</span> <span>৮৫০/-</span></li>
+                            <li class="flex justify-between"><span>পাপিয়া ফেসিয়াল</span> <span>৭০০/-</span></li>
+                            <li class="flex justify-between"><span>পার্ল ফেসিয়াল</span> <span>৮০০/-</span></li>
+                            <li class="flex justify-between"><span>ডায়মন্ট ফেসিয়াল</span> <span>৭০০/-</span></li>
+                            <li class="flex justify-between"><span>সিলভার ফেসিয়াল</span> <span>৬৫০/-</span></li>
+                            <li class="flex justify-between"><span>ফেয়ার টু ফেজ ফেসিয়াল</span> <span>৯০০/-</span></li>
+                            <li class="flex justify-between"><span>ফেয়ার পলিশ</span> <span>৬০০/-</span></li>
+                            <li class="flex justify-between"><span>গড মিক্স ফেসিয়াল</span> <span>৬০০/-</span></li>
+                            <li class="flex justify-between"><span>BB Glow ফেসিয়াল</span> <span>১৩০০/-</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Bridal & Makeup Card -->
+                <div class="bg-white rounded-2xl card-shadow overflow-hidden">
+                    <button class="accordion-toggle w-full text-left p-6 flex justify-between items-center">
+                        <div class="flex items-center">
+                            <i class="fas fa-female text-2xl text-pink-500 mr-4"></i>
+                            <h3 class="bengali text-xl font-semibold text-gray-700">সাজ ও অন্যান্য</h3>
+                        </div>
+                        <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6">
+                        <ul class="bengali text-gray-600 space-y-3 border-t pt-4">
+                            <li class="flex justify-between"><span>বউ সাজ</span> <span>৫০০০-১২০০০/-</span></li>
+                            <li class="flex justify-between"><span>বৌ ভাতের সাজ</span> <span>৪০০০-৮০০০/-</span></li>
+                            <li class="flex justify-between"><span>গায়ে হলুদ সাজ</span> <span>৩০০০-৫০০০/-</span></li>
+                            <li class="flex justify-between"><span>পার্টি সাজ</span> <span>২০০০/-</span></li>
+                            <li class="flex justify-between"><span>নরমাল সাজ</span> <span>৫০০-১২০০/-</span></li>
+                            <li class="flex justify-between"><span>শাড়ী পড়ানো</span> <span>২০০/-</span></li>
+                            <li class="flex justify-between"><span>নাক ফোঁড়ানো</span> <span>২০০/-</span></li>
+                            <li class="flex justify-between"><span>কান ফোঁড়ানো</span> <span>৪০০/-</span></li>
+                            <li class="flex justify-between"><span>হাইড্রো ফেসিয়াল</span> <span>১৫০০/-</span></li>
+                            <li class="flex justify-between"><span>বায়ো হাইড্রো ফেসিয়াল</span> <span>১০০০/-</span></li>
+                            <li class="flex justify-between"><span>তিল রিমুভ</span> <span>২০০/-</span></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Rebonding Card -->
+                <div class="bg-white rounded-2xl card-shadow overflow-hidden">
+                    <button class="accordion-toggle w-full text-left p-6 flex justify-between items-center">
+                        <div class="flex items-center">
+                            <i class="fas fa-wave-square text-2xl text-pink-500 mr-4"></i>
+                            <h3 class="bengali text-xl font-semibold text-gray-700">হেয়ার রিবন্ডিং</h3>
+                        </div>
+                        <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6">
+                        <ul class="bengali text-gray-600 space-y-3 border-t pt-4">
+                            <li class="flex justify-between"><span>কেরাটিন রিবন্ডিং</span> <span>৫০০০-১৩০০০/-</span></li>
+                            <li class="flex justify-between"><span>শাইন বন রিবন্ডিং</span> <span>৩০০০-৮০০০/-</span></li>
+                            <li class="flex justify-between"><span>নরমাল রিবন্ডিং</span> <span>৩০০০-৬০০০/-</span></li>
+                             <li class="flex justify-between"><span>চুল স্ট্রেইট (ফুলহেড)</span> <span>২৫০০/- থেকে</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- Footer/Contact Section -->
+        <footer class="text-center mt-10 pt-6 border-t-2 border-pink-100">
+             <h3 class="bengali text-xl font-bold text-pink-700 mb-4">যোগাযোগ করুন</h3>
+             <div class="text-gray-600">
+                <p class="bengali flex items-center justify-center mb-2">
+                    <i class="fas fa-map-marker-alt mr-2 text-pink-500"></i>
+                    ভোলা সদর, কালীবাড়ি রোড, আমতলা
+                </p>
+                <p class="flex items-center justify-center">
+                    <i class="fas fa-phone-alt mr-2 text-pink-500"></i>
+                    +880 ১৭৬৬-৮২২৬৩১
+                </p>
+             </div>
+             <div class="flex justify-center space-x-6 mt-4 text-2xl">
+                 <a href="#" class="text-pink-600 hover:text-pink-800"><i class="fab fa-facebook-square"></i></a>
+                 <a href="#" class="text-pink-600 hover:text-pink-800"><i class="fab fa-instagram-square"></i></a>
+                 <a href="#" class="text-pink-600 hover:text-pink-800"><i class="fab fa-whatsapp-square"></i></a>
+             </div>
+             <p class="bengali text-sm text-gray-500 mt-6">অ্যাপয়েন্টমেন্ট বুক করতে আমাদের সাথে যোগাযোগ করুন।</p>
+        </footer>
+    </div>
+    
+    <script>
+        // JavaScript for accordion functionality
+        const accordionToggles = document.querySelectorAll('.accordion-toggle');
+
+        accordionToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('.fa-chevron-down');
+
+                // Close all other accordions
+                accordionToggles.forEach(otherToggle => {
+                    if (otherToggle !== toggle) {
+                        const otherContent = otherToggle.nextElementSibling;
+                        const otherIcon = otherToggle.querySelector('.fa-chevron-down');
+                        otherContent.style.maxHeight = null;
+                        otherContent.classList.remove('open');
+                        otherIcon.classList.remove('rotate-180');
+                    }
+                });
+
+                // Toggle the clicked accordion
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    content.classList.remove('open');
+                    icon.classList.remove('rotate-180');
+                } else {
+                    content.classList.add('open');
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    icon.classList.add('rotate-180');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
